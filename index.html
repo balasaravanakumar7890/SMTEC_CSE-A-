@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-300 to-blue-500 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white/80 backdrop-blur-md shadow-2xl rounded-2xl p-8 w-[900px]">
+    <h1 class="text-3xl font-bold text-center mb-6">🌦 Live Weather Dashboard</h1>
+
+    <!-- Search Bar -->
+    <div class="flex justify-center mb-8">
+      <input type="text" placeholder="Enter city name..." class="w-2/3 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">Search</button>
+    </div>
+
+    <!-- Current Weather Card -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8 flex items-center justify-between">
+      <div>
+        <h2 class="text-2xl font-semibold">Chennai, IN</h2>
+        <p class="text-gray-600">Monday, Nov 5 • 10:30 AM</p>
+        <p class="text-4xl font-bold mt-4">29°C</p>
+        <p class="text-gray-600">☁ Broken Clouds</p>
+      </div>
+      <div class="text-center">
+        <img src="https://openweathermap.org/img/wn/04d@2x.png" class="w-24 mx-auto" alt="weather">
+        <p>Humidity: 65%</p>
+        <p>Wind: 12 km/h</p>
+      </div>
+    </div>
+
+    <!-- 5 Day Forecast -->
+    <h3 class="text-xl font-semibold mb-4">5-Day Forecast</h3>
+    <div class="grid grid-cols-5 gap-4">
+      <!-- Day Card -->
+      <div class="bg-blue-100 rounded-xl p-4 text-center">
+        <p class="font-semibold">Tue</p>
+        <img src="https://openweathermap.org/img/wn/01d@2x.png" class="w-16 mx-auto">
+        <p class="font-bold">30°C</p>
+        <p class="text-sm text-gray-600">Sunny</p>
+      </div>
+      <div class="bg-blue-100 rounded-xl p-4 text-center">
+        <p class="font-semibold">Wed</p>
+        <img src="https://openweathermap.org/img/wn/03d@2x.png" class="w-16 mx-auto">
+        <p class="font-bold">28°C</p>
+        <p class="text-sm text-gray-600">Cloudy</p>
+      </div>
+      <div class="bg-blue-100 rounded-xl p-4 text-center">
+        <p class="font-semibold">Thu</p>
+        <img src="https://openweathermap.org/img/wn/09d@2x.png" class="w-16 mx-auto">
+        <p class="font-bold">26°C</p>
+        <p class="text-sm text-gray-600">Rainy</p>
+      </div>
+      <div class="bg-blue-100 rounded-xl p-4 text-center">
+        <p class="font-semibold">Fri</p>
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" class="w-16 mx-auto">
+        <p class="font-bold">27°C</p>
+        <p class="text-sm text-gray-600">Partly Cloudy</p>
+      </div>
+      <div class="bg-blue-100 rounded-xl p-4 text-center">
+        <p class="font-semibold">Sat</p>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" class="w-16 mx-auto">
+        <p class="font-bold">25°C</p>
+        <p class="text-sm text-gray-600">Light Rain</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
